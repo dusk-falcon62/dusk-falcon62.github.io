@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eeuss影院在线骑兵区秋霞-独立观影资源与院线缓存指南</title>
+<meta name="description" content="eeuss影院在线骑兵区秋霞是一个整理独立片源、院线缓存与放映时间线的观影索引站。这里按骑兵区片单、秋霞专场、字幕版本与清晰度分层，帮你在二十多个频道里快速找到可看、可比对、可回看的具体条目。">
+<meta name="keywords" content="eeuss影院在线骑兵区秋霞">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1f2b'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23e8b04b' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23e8b04b'/%3E%3Cpath d='M32 6v8M32 50v8M6 32h8M50 32h8' stroke='%23e8b04b' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f5f4ef;
+  --surface:#ffffff;
+  --ink:#1a1f2b;
+  --ink-soft:#4a5060;
+  --muted:#6f7583;
+  --line:#e2ded3;
+  --line-strong:#cfc9bb;
+  --brand:#22303f;
+  --accent:#c8912f;
+  --accent-soft:#f6e9cb;
+  --accent-ink:#7a5514;
+  --teal:#2e6f6a;
+  --teal-soft:#e2eeec;
+  --danger:#a8402f;
+  --radius-s:6px;
+  --radius-m:10px;
+  --radius-l:16px;
+  --shadow-s:0 1px 2px rgba(26,31,43,.06),0 2px 6px rgba(26,31,43,.05);
+  --shadow-m:0 4px 14px rgba(26,31,43,.09);
+  --space-1:6px;--space-2:12px;--space-3:18px;--space-4:26px;--space-5:38px;--space-6:54px;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+  --font-serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;
+  --sticky-offset:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-offset)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 .9em}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:10px 16px;border-radius:0 0 var(--radius-s) 0;z-index:200}
+.skip:focus{left:0}
+
+/* ---------- sticky stack ---------- */
+.sticky-stack{position:sticky;top:0;z-index:100;box-shadow:var(--shadow-s)}
+.announce{background:var(--brand);color:#f3efe4;font-size:13.5px;padding:8px 0;border-bottom:1px solid #33455a}
+.announce .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.announce .tag{background:var(--accent);color:#22190a;font-weight:700;padding:1px 9px;border-radius:999px;font-size:12px;letter-spacing:.04em;white-space:nowrap}
+.announce a{color:#ffe6ab;border-bottom:1px dotted #ffe6ab}
+.announce .grow{flex:1}
+
+header.site-head{background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.head-inner{display:flex;align-items:center;gap:22px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .txt{display:flex;flex-direction:column;line-height:1.2}
+.brand .txt b{font-size:16.5px;letter-spacing:.01em}
+.brand .txt span{font-size:11px;color:var(--muted);letter-spacing:.22em}
+nav.main-nav{display:flex;gap:2px;flex-wrap:wrap;flex:1}
+nav.main-nav a{padding:7px 11px;border-radius:999px;font-size:14.5px;color:var(--ink-soft);white-space:nowrap;border:1px solid transparent}
+nav.main-nav a:hover{background:var(--accent-soft);color:var(--accent-ink);border-color:#ecd9ac}
+.head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-box{display:flex;align-items:center;border:1px solid var(--line-strong);background:#fff;border-radius:999px;overflow:hidden;padding-left:10px}
+.search-box svg{width:15px;height:15px;color:var(--muted);flex:none}
+.search-box input{border:0;background:transparent;padding:7px 8px;font-size:14px;width:150px;color:var(--ink);outline:none}
+.search-box button{border:0;background:var(--brand);color:#fff;padding:7px 14px;font-size:13px}
+.search-box button:hover{background:#31445a}
+.menu-btn{display:none;border:1px solid var(--line-strong);background:#fff;border-radius:var(--radius-s);padding:8px 12px;font-size:14px;color:var(--ink-soft);align-items:center;gap:6px}
+.menu-btn svg{width:16px;height:16px}
+.search-feedback{font-size:13px;color:var(--danger);margin:6px 0 0;display:none}
+.search-feedback.show{display:block}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#fbf8f0 0%,#f1ece0 52%,#ece6d6 100%);border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(34,48,63,.14) 1px,transparent 0);background-size:22px 22px;opacity:.5;pointer-events:none}
+.hero-inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;padding:56px 0 58px}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.16em;color:var(--accent-ink);font-weight:700;background:var(--accent-soft);border:1px solid #ecd9ac;border-radius:999px;padding:4px 12px;margin-bottom:16px}
+.hero h1{font-family:var(--font-serif);font-size:clamp(28px,3.6vw,44px);letter-spacing:.01em;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--accent-ink);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:8px;text-decoration-thickness:3px}
+.hero .lede{font-size:16.5px;color:var(--ink-soft);max-width:36em;margin-bottom:22px}
+.hero .lede strong{color:var(--ink);border-bottom:2px solid var(--accent);padding-bottom:1px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-size:15px;font-weight:600;border:1px solid transparent;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--shadow-m)}
+.btn-primary:hover{background:#2c3e53}
+.btn-ghost{background:#fff;color:var(--brand);border-color:var(--line-strong)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent-ink)}
+.hero-stats{display:flex;gap:26px;margin-top:26px;flex-wrap:wrap}
+.hero-stats div{min-width:96px}
+.hero-stats b{display:block;font-size:25px;font-family:var(--font-serif);color:var(--brand);line-height:1.1}
+.hero-stats span{font-size:12.5px;color:var(--muted);letter-spacing:.03em}
+.hero-visual{position:relative;background:#fff;border:1px solid var(--line-strong);border-radius:var(--radius-l);padding:20px;box-shadow:var(--shadow-m)}
+.hero-visual .reel{width:100%;height:auto}
+.hero-visual .cap{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:1.6;border-top:1px dashed var(--line-strong);padding-top:10px}
+.hero-visual .cap b{color:var(--ink);font-weight:700}
+
+/* ---------- section shell ---------- */
+main{padding:clamp(34px,5vw,60px) 0 20px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:38px}
+.content-col{min-width:0}
+section.block{margin-bottom:var(--space-6);scroll-margin-top:calc(var(--sticky-offset) + 16px)}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:20px;border-bottom:1px solid var(--line-strong);padding-bottom:10px}
+.block-head h2{font-size:clamp(20px,2.2vw,25px);font-family:var(--font-serif);letter-spacing:.01em}
+.block-head h2 small{display:block;font-family:var(--font-sans);font-size:12px;color:var(--accent-ink);letter-spacing:.14em;font-weight:600;margin-bottom:5px}
+.block-head .morelink{font-size:13px;color:var(--muted);white-space:nowrap;border-bottom:1px solid transparent;padding-bottom:2px}
+.block-head .morelink:hover{color:var(--accent-ink);border-color:var(--accent)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);box-shadow:var(--shadow-s)}
+.tagrow{display:flex;flex-wrap:wrap;gap:8px}
+.tag{display:inline-block;font-size:13px;padding:4px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);border:1px solid #ecd9ac;transition:background .15s}
+.tag:hover{background:#efd9a9}
+.tag.teal{background:var(--teal-soft);color:var(--teal);border-color:#c6ded9}
+.tag.grey{background:#f0eee7;color:var(--ink-soft);border-color:var(--line-strong)}
+.divider-note{font-size:13px;color:var(--muted);margin:-6px 0 18px}
+
+/* ---------- overview ---------- */
+.overview-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.ov-card{padding:18px 18px 16px;border-left:4px solid var(--accent)}
+.ov-card:nth-child(2){border-left-color:var(--teal)}
+.ov-card:nth-child(3){border-left-color:#8a6bb0}
+.ov-card:nth-child(4){border-left-color:#b25e46}
+.ov-card h3{font-size:16px;margin-bottom:6px}
+.ov-card p{font-size:14px;color:var(--ink-soft);margin:0}
+.ov-card .meta{font-size:12.5px;color:var(--muted);margin-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---------- pick cards ---------- */
+.pick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pick{overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.pick:hover{transform:translateY(-3px);box-shadow:var(--shadow-m)}
+.pick .thumb{aspect-ratio:16/9;background:#e6e1d4;position:relative}
+.pick .thumb img{width:100%;height:100%;object-fit:cover}
+.pick .thumb .badge{position:absolute;left:10px;top:10px;background:rgba(26,31,43,.86);color:#fff;font-size:11.5px;padding:2px 9px;border-radius:999px;letter-spacing:.05em}
+.pick .body{padding:14px 15px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
+.pick h3{font-size:15.5px}
+.pick p{font-size:13.5px;color:var(--ink-soft);margin:0;flex:1}
+.pick .foot{font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;border-top:1px dashed var(--line);padding-top:9px}
+
+/* ---------- updates list ---------- */
+.upd-list{display:flex;flex-direction:column}
+.upd-item{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:16px;padding:13px 4px;border-bottom:1px dashed var(--line-strong);align-items:baseline}
+.upd-item:first-child{padding-top:0}
+.upd-item time{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.upd-item .txt{font-size:14.5px;color:var(--ink-soft)}
+.upd-item .txt b{color:var(--ink);font-weight:700}
+.upd-item .kind{font-size:12px;color:var(--accent-ink);background:var(--accent-soft);border-radius:999px;padding:1px 9px;white-space:nowrap}
+
+/* ---------- channel index ---------- */
+.chan-head{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chan-head button{border:1px solid var(--line-strong);background:#fff;border-radius:999px;padding:6px 14px;font-size:13.5px;color:var(--ink-soft)}
+.chan-head button.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.chan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.chan-grid a{display:flex;flex-direction:column;gap:2px;padding:11px 12px;border:1px solid var(--line);border-radius:var(--radius-s);background:#fff;font-size:14px;transition:border-color .15s,background .15s}
+.chan-grid a:hover{border-color:var(--accent);background:#fffdf6}
+.chan-grid a span{font-size:11.5px;color:var(--muted);letter-spacing:.03em}
+
+/* ---------- deep analysis ---------- */
+.analysis{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-l);padding:clamp(20px,3vw,34px);box-shadow:var(--shadow-s)}
+.analysis .lead{font-size:16.5px;color:var(--ink-soft);border-left:4px solid var(--accent);padding-left:16px;margin-bottom:24px}
+.analysis h3{font-size:18.5px;font-family:var(--font-serif);margin:28px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.analysis h3:first-of-type{margin-top:6px}
+.analysis h3 .num{color:var(--accent-ink);font-family:var(--font-sans);font-size:13px;letter-spacing:.12em;margin-right:8px;font-weight:700}
+.analysis p{font-size:15.5px;color:var(--ink-soft)}
+.analysis strong{color:var(--ink)}
+.claim{background:#fffdf6;border:1px solid #ecd9ac;border-left:4px solid var(--accent);border-radius:var(--radius-s);padding:14px 16px;margin:16px 0}
+.claim .claim-h{font-size:13px;font-weight:700;color:var(--accent-ink);letter-spacing:.08em;margin-bottom:6px}
+.claim p{margin:0;font-size:14.5px}
+table.cmp{width:100%;border-collapse:collapse;margin:14px 0 6px;font-size:14px}
+table.cmp caption{caption-side:top;text-align:left;font-size:12.5px;color:var(--muted);padding-bottom:6px}
+table.cmp th,table.cmp td{border:1px solid var(--line-strong);padding:8px 10px;text-align:left;vertical-align:top}
+table.cmp th{background:#f3f0e7;font-size:13px;color:var(--ink-soft);font-weight:700}
+.timeline{margin:16px 0 4px;padding-left:0}
+.timeline li{position:relative;padding:0 0 16px 26px;border-left:2px solid var(--line-strong);font-size:14.5px;color:var(--ink-soft)}
+.timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px var(--accent-soft)}
+.timeline time{display:block;font-size:12.5px;color:var(--accent-ink);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.03em}
+.split2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:16px 0}
+.panel{background:#f8f6ef;border:1px solid var(--line);border-radius:var(--radius-m);padding:16px}
+.panel h4{font-size:14.5px;margin-bottom:8px;color:var(--brand)}
+.panel ul{font-size:14px;color:var(--ink-soft)}
+.panel li{padding:4px 0 4px 16px;position:relative}
+.panel li::before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;border-radius:2px;background:var(--accent)}
+.panel.fact{border-top:3px solid var(--teal)}
+.panel.rumor{border-top:3px solid var(--danger);background:#fdf6f4}
+
+/* ---------- experience steps ---------- */
+.steps{counter-reset:st;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.step{counter-increment:st;background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);padding:16px 16px 14px 58px;position:relative}
+.step::before{content:counter(st,decimal-leading-zero);position:absolute;left:16px;top:15px;font-family:var(--font-serif);font-size:20px;color:var(--accent);font-weight:700}
+.step h3{font-size:15px;margin-bottom:5px}
+.step p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* ---------- faq ---------- */
+details.faq{border:1px solid var(--line);border-radius:var(--radius-m);background:#fff;margin-bottom:10px;overflow:hidden}
+details.faq[open]{border-color:var(--accent);box-shadow:var(--shadow-s)}
+details.faq summary{list-style:none;cursor:pointer;padding:14px 46px 14px 16px;font-size:15px;font-weight:600;position:relative;color:var(--ink)}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:20px;color:var(--accent-ink);font-weight:400;line-height:1}
+details.faq[open] summary::after{content:"–"}
+details.faq .ans{padding:0 16px 15px;font-size:14.5px;color:var(--ink-soft);border-top:1px dashed var(--line);margin-top:0;padding-top:12px}
+details.faq .ans p{margin:0 0 .6em}
+details.faq .ans p:last-child{margin-bottom:0}
+
+/* ---------- comments ---------- */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);padding:15px 16px}
+.cmt .who{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.cmt .avatar{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;flex:none}
+.cmt .who b{font-size:14px}
+.cmt .who time{font-size:12px;color:var(--muted);margin-left:auto;font-variant-numeric:tabular-nums}
+.cmt p{font-size:14px;color:var(--ink-soft);margin:0}
+.cmt .quote{font-size:12.5px;color:var(--teal);background:var(--teal-soft);border-radius:var(--radius-s);padding:4px 9px;display:inline-block;margin-top:9px}
+.stars{color:var(--accent);font-size:13px;letter-spacing:2px}
+
+/* ---------- news ---------- */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.news-item{display:flex;gap:14px;padding:16px;align-items:flex-start}
+.news-item .date{flex:none;text-align:center;border-right:1px solid var(--line);padding-right:14px;min-width:56px}
+.news-item .date b{display:block;font-family:var(--font-serif);font-size:22px;line-height:1;color:var(--brand)}
+.news-item .date span{font-size:11.5px;color:var(--muted)}
+.news-item h3{font-size:15px;margin-bottom:5px}
+.news-item p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* ---------- sidebar ---------- */
+aside.side-col{min-width:0}
+.side-card{padding:18px;margin-bottom:20px}
+.side-card h2{font-size:15px;letter-spacing:.06em;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side-nav{position:sticky;top:calc(var(--sticky-offset) + 12px)}
+.side-nav a{display:block;font-size:14px;color:var(--ink-soft);padding:6px 10px;border-left:3px solid transparent;border-radius:0 var(--radius-s) var(--radius-s) 0;transition:all .15s}
+.side-nav a:hover{background:#f4f0e5;color:var(--ink)}
+.side-nav a.active{background:var(--accent-soft);border-left-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.rank-list{counter-reset:rk}
+.rank-list li{counter-increment:rk;display:flex;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;align-items:baseline}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{content:counter(rk);flex:none;width:20px;height:20px;border-radius:5px;background:#f0eee7;color:var(--muted);font-size:12px;display:grid;place-items:center;font-weight:700;align-self:center}
+.rank-list li:nth-child(-n+3)::before{background:var(--brand);color:#fff}
+.rank-list a{flex:1;color:var(--ink-soft)}
+.rank-list a:hover{color:var(--accent-ink)}
+.rank-list .n{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.credit{background:linear-gradient(150deg,#22303f,#2e4155);color:#e7e2d6;border-radius:var(--radius-m);padding:20px}
+.credit h2{font-size:14px;letter-spacing:.1em;color:#f0d9a4;border-bottom:1px solid #3d5165;padding-bottom:8px;margin-bottom:12px}
+.credit blockquote{margin:0 0 12px;font-family:var(--font-serif);font-size:15px;line-height:1.8;color:#f2eee4}
+.credit cite{font-style:normal;font-size:12.5px;color:#a9b6c4;display:block}
+.credit .role{font-size:11.5px;color:#8ea0b2;margin-top:2px}
+
+/* ---------- related ---------- */
+.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.related-card{padding:16px 18px}
+.related-card h3{font-size:14.5px;margin-bottom:10px;color:var(--brand)}
+.chip-list{display:flex;flex-wrap:wrap;gap:7px}
+.chip-list a{font-size:13px;padding:3px 10px;border-radius:var(--radius-s);background:#f3f0e7;color:var(--ink-soft);border:1px solid var(--line);transition:all .15s}
+.chip-list a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* ---------- footer ---------- */
+footer.site-foot{background:#1c2530;color:#b9c2cd;margin-top:36px;border-top:4px solid var(--accent)}
+.foot-top{display:grid;grid-template-columns:1.4fr 2.4fr;gap:40px;padding:44px 0 32px}
+.foot-brand .logo-row{display:flex;align-items:center;gap:10px;color:#f4f0e4;margin-bottom:12px}
+.foot-brand .logo-row svg{width:34px;height:34px}
+.foot-brand .logo-row b{font-size:16px}
+.foot-brand p{font-size:13.5px;line-height:1.8;color:#93a0ae;max-width:30em}
+.foot-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.foot-groups h3{font-size:13px;letter-spacing:.1em;color:#e8d3a2;margin-bottom:10px}
+.foot-groups li{padding:3px 0;font-size:13.5px}
+.foot-groups a{color:#a9b5c2}
+.foot-groups a:hover{color:#f0d9a4}
+.foot-bottom{border-top:1px solid #2c3946;padding:16px 0 24px;font-size:12.5px;color:#7f8d9b;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+.foot-bottom .note b{color:#a9b5c2}
+
+/* ---------- back to top ---------- */
+#toTop{position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);background:#fff;color:var(--brand);display:grid;place-items:center;box-shadow:var(--shadow-m);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;transform:translateY(8px);z-index:90}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+#toTop:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+#toTop svg{width:18px;height:18px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1024px){
+  .layout{grid-template-columns:1fr}
+  aside.side-col{display:block}
+  .side-nav{position:static}
+  .pick-grid{grid-template-columns:repeat(2,1fr)}
+  .chan-grid{grid-template-columns:repeat(3,1fr)}
+  .foot-top{grid-template-columns:1fr;gap:28px}
+  .hero-inner{grid-template-columns:1fr;gap:30px;padding:44px 0}
+  .hero-visual{max-width:520px}
+}
+@media (max-width:860px){
+  :root{--sticky-offset:96px}
+  .head-inner{flex-wrap:wrap;gap:12px}
+  .menu-btn{display:inline-flex}
+  nav.main-nav{display:none;flex-basis:100%;flex-direction:column;gap:2px;border-top:1px solid var(--line);padding-top:10px}
+  nav.main-nav.open{display:flex}
+  nav.main-nav a{padding:9px 12px;border-radius:var(--radius-s)}
+  .head-tools{order:2}
+  .search-box input{width:120px}
+  .overview-grid,.pick-grid,.chan-grid,.steps,.comments,.news-grid,.related-grid,.split2{grid-template-columns:1fr}
+  .chan-grid{grid-template-columns:repeat(2,1fr)}
+  .upd-item{grid-template-columns:1fr;gap:3px;padding:12px 0}
+  .upd-item .kind{justify-self:start;margin-top:4px}
+  .foot-groups{grid-template-columns:1fr 1fr}
+  #toTop{bottom:18px;right:16px;width:42px;height:42px}
+}
+@media (max-width:420px){
+  .wrap{width:calc(100% - 28px)}
+  .hero-stats{gap:18px}
+  .foot-groups{grid-template-columns:1fr}
+  .search-box input{width:96px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;transition-duration:.001ms !important}
+  .pick:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="sticky-stack">
+  <div class="announce" role="status">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span>11 月 8 日 09:20 骑兵区片单新增《雾港十六时》1080p 字幕修订版，秋霞专场第 4 场排期顺延至 21:40。</span>
+      <span class="grow"></span>
+      <a href="#updates">查看本周更新记录 →</a>
+    </div>
+  </div>
+
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="/#top" aria-label="返回首页顶部">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#22303f"/>
+          <circle cx="32" cy="32" r="15" fill="none" stroke="#e8b04b" stroke-width="3.5"/>
+          <circle cx="32" cy="32" r="4" fill="#e8b04b"/>
+          <path d="M32 6v8M32 50v8M6 32h8M50 32h8" stroke="#e8b04b" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="22" fill="none" stroke="#3d5165" stroke-width="1.4" stroke-dasharray="2 5"/>
+        </svg>
+        <span class="txt"><b>eeuss影院在线骑兵区秋霞</b><span>放映索引</span></span>
+      </a>
+
+      <nav class="main-nav" id="primaryNav" aria-label="主题导航">
+        <a href="#overview">频道概览</a>
+        <a href="#picks">精选片单</a>
+        <a href="#updates">更新</a>
+        <a href="#channels">分类</a>
+        <a href="#analysis">深度解析</a>
+        <a href="#guide">观影指南</a>
+        <a href="#faq">问答</a>
+      </nav>
+
+      <div class="head-tools">
+        <form class="search-box" id="searchForm" role="search" aria-label="站内条目查找">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <input type="search" id="searchInput" placeholder="片名 / 频道 / 标签" aria-label="输入片名、频道或标签">
+          <button type="submit">查找</button>
+        </form>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="primaryNav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          菜单
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">2026 · 冬季排期 · 第 45 周</span>
+        <h1>eeuss影院在线骑兵区秋霞</h1>
+        <p class="lede">按骑兵区的分区片单和秋霞专场的场次表，把独立长片、修复重映与短片合辑放在同一张时间轴上。<strong>本周可查条目 218 条</strong>，其中 63 条带有字幕修订记录，41 条标注了画幅与片长差异。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#picks">进入本周片单</a>
+          <a class="btn btn-ghost" href="#channels">按频道筛选</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>218</b><span>本周可查条目</span></div>
+          <div><b>12</b><span>内容频道</span></div>
+          <div><b>63</b><span>字幕修订记录</span></div>
+          <div><b>21:40</b><span>秋霞专场末场</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg class="reel" viewBox="0 0 360 236" role="img" aria-label="骑兵区片单与秋霞专场排期示意图">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#22303f"/><stop offset="1" stop-color="#3d5165"/>
+            </linearGradient>
+          </defs>
+          <rect x="6" y="6" width="348" height="224" rx="12" fill="#1c2530"/>
+          <rect x="20" y="22" width="200" height="10" rx="5" fill="#e8b04b"/>
+          <rect x="20" y="42" width="130" height="7" rx="3.5" fill="#5c6f80"/>
+          <g>
+            <rect x="20" y="64" width="152" height="38" rx="7" fill="url(#g1)" stroke="#4b6076"/>
+            <circle cx="40" cy="83" r="9" fill="none" stroke="#e8b04b" stroke-width="2"/>
+            <rect x="58" y="76" width="86" height="6" rx="3" fill="#c3cdd7"/>
+            <rect x="58" y="88" width="58" height="5" rx="2.5" fill="#7d8d9c"/>
+            <text x="128" y="62" fill="#9fb0bf" font-size="8" font-family="sans-serif">骑兵区 · 1080p</text>
+          </g>
+          <g>
+            <rect x="188" y="64" width="152" height="38" rx="7" fill="url(#g1)" stroke="#4b6076"/>
+            <circle cx="208" cy="83" r="9" fill="none" stroke="#e8b04b" stroke-width="2"/>
+            <rect x="226" y="76" width="86" height="6" rx="3" fill="#c3cdd7"/>
+            <rect x="226" y="88" width="58" height="5" rx="2.5" fill="#7d8d9c"/>
+            <text x="296" y="62" fill="#9fb0bf" font-size="8" font-family="sans-serif">秋霞 · 字幕修订</text>
+          </g>
+          <g>
+            <rect x="20" y="112" width="320" height="46" rx="7" fill="#26313d" stroke="#3d5165"/>
+            <rect x="32" y="126" width="4" height="18" rx="2" fill="#e8b04b"/>
+            <rect x="46" y="124" width="112" height="6" rx="3" fill="#c3cdd7"/>
+            <rect x="46" y="136" width="180" height="5" rx="2.5" fill="#6c7d8d"/>
+            <rect x="252" y="126" width="76" height="18" rx="9" fill="#e8b04b"/>
+            <text x="266" y="139" fill="#22190a" font-size="9" font-weight="700" font-family="sans-serif">21:40 末场</text>
+          </g>
+          <g>
+            <rect x="20" y="170" width="98" height="44" rx="7" fill="#26313d" stroke="#3d5165"/>
+            <rect x="130" y="170" width="98" height="44" rx="7" fill="#26313d" stroke="#3d5165"/>
+            <rect x="240" y="170" width="100" height="44" rx="7" fill="#26313d" stroke="#3d5165"/>
+            <text x="34" y="194" fill="#e8b04b" font-size="13" font-weight="700" font-family="sans-serif">63</text>
+            <text x="34" y="206" fill="#8ea0b2" font-size="7.5" font-family="sans-serif">字幕修订</text>
+            <text x="144" y="194" fill="#e8b04b" font-size="13" font-weight="700" font-family="sans-serif">41</text>
+            <text x="144" y="206" fill="#8ea0b2" font-size="7.5" font-family="sans-serif">片长差异</text>
+            <text x="254" y="194" fill="#e8b04b" font-size="13" font-weight="700" font-family="sans-serif">12</text>
+            <text x="254" y="206" fill="#8ea0b2" font-size="7.5" font-family="sans-serif">内容频道</text>
+          </g>
+        </svg>
+        <p class="cap"><b>排期说明：</b>骑兵区按画质分层，秋霞专场按单场编号排序；两列共用一套时区与字幕版本标记。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout">
+      <div class="content-col">
+
+        <!-- 1 领域概览 -->
+        <section class="block" id="overview">
+          <div class="block-head">
+            <h2><small>CHANNEL OVERVIEW</small>频道概览：骑兵区与秋霞专场怎么分工</h2>
+            <a class="morelink" href="#channels">全部 12 个频道</a>
+          </div>
+          <p class="divider-note">骑兵区偏向长时间存储与画质分层，秋霞专场偏向单场放映与字幕校订。两者条目可以互相跳转，但更新节奏不同。</p>
+          <div class="overview-grid">
+            <article class="ov-card card">
+              <h3>骑兵区片库：按画质归档</h3>
+              <p>同一部片常出现 720p、1080p 和修复版三条记录，片长差在 40 秒到 3 分钟之间。归档编号以 Q 开头，例如 Q-1120。</p>
+              <div class="meta"><span>归档 96 条</span><span>最近校订 11-07</span></div>
+            </article>
+            <article class="ov-card card">
+              <h3>秋霞专场：按场次排期</h3>
+              <p>周末连排四场，工作日两场。每场标注字幕来源与放映介质，11 月 8 日第四场顺延到 21:40，票面时间同步调整。</p>
+              <div class="meta"><span>本周 9 场</span><span>末场 21:40</span></div>
+            </article>
+            <article class="ov-card card">
+              <h3>字幕修订：版本可追溯</h3>
+              <p>每条修订记下校订人、时间与改动行数。《雾港十六时》第 7 版改动 34 行，主要修正地名与海浪音效提示。</p>
+              <div class="meta"><span>修订 63 条</span><span>最多 9 个版本</span></div>
+            </article>
+            <article class="ov-card card">
+              <h3>画幅与片长：对照查看</h3>
+              <p>1.85:1 与 2.39:1 两种画幅分开标注，同片两版并列时给出画幅裁切说明，避免把上下黑边误当作老片缺陷。</p>
+              <div class="meta"><span>片长差异 41 条</span><span>画幅两版 17 组</span></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 2 精选内容推荐 -->
+        <section class="block" id="picks">
+          <div class="block-head">
+            <h2><small>EDITOR'S PICKS</small>本周精选：骑兵区片单与秋霞专场各三则</h2>
+            <a class="morelink" href="#updates">看新增条目</a>
+          </div>
+          <div class="pick-grid">
+            <article class="pick card">
+              <a class="thumb" href="/#updates"><img src="https://picsum.photos/seed/eeuss-qibing-wugang/640/360" width="640" height="360" loading="lazy" alt="骑兵区《雾港十六时》修复版封面场景"></a>
+              <div class="body">
+                <span class="tagrow"><span class="tag">骑兵区修复版</span></span>
+                <h3>《雾港十六时》Q-1120 修复版</h3>
+                <p>1080p，片长 118 分 40 秒，比原始版多 2 分 12 秒，多出段落为码头夜巡。字幕第 7 版，校订人林岸。</p>
+                <div class="foot"><span>11-08 09:20 更新</span><span>评分 4.2 / 5</span></div>
+              </div>
+            </article>
+            <article class="pick card">
+              <a class="thumb" href="/#updates"><img src="https://picsum.photos/seed/eeuss-qiuxia-baofeng/640/360" width="640" height="360" loading="lazy" alt="秋霞专场《暴风前的十七分钟》放映画面"></a>
+              <div class="body">
+                <span class="tagrow"><span class="tag teal">秋霞专场</span></span>
+                <h3>《暴风前的十七分钟》第 4 场</h3>
+                <p>短片集，全长 41 分钟，含 5 个段落。11-08 排期 21:40 起，自带英文字幕对照稿，映后设 12 分钟问答。</p>
+                <div class="foot"><span>11-06 排期确认</span><span>评分 3.9 / 5</span></div>
+              </div>
+            </article>
+            <article class="pick card">
+              <a class="thumb" href="/#updates"><img src="https://picsum.photos/seed/eeuss-qibing-shuiku/640/360" width="640" height="360" loading="lazy" alt="骑兵区《水库以北》胶片转数字版本静帧"></a>
+              <div class="body">
+                <span class="tagrow"><span class="tag">胶片转数字</span></span>
+                <h3>《水库以北》2K 扫描版</h3>
+                <p>原片 1978 年，片长 96 分钟。此版去除片头 8 秒划痕，保留原始颗粒。同页并列 720p 存目版，画幅为 1.66:1。</p>
+                <div class="foot"><span>11-05 扫描记录</span><span>评分 4.5 / 5</span></div>
+              </div>
+            </article>
+            <article class="pick card">
+              <a class="thumb" href="/#updates"><img src="https://picsum.photos/seed/eeuss-qiuxia-yanjiusuo/640/360" width="640" height="360" loading="lazy" alt="秋霞专场《研究所的午后三时》剧照"></a>
+              <div class="body">
+                <span class="tagrow"><span class="tag teal">秋霞专场</span></span>
+                <h3>《研究所的午后三时》第 2 场</h3>
+                <p>长片，片长 104 分钟。放映介质为 DCP，色温按 2024 年修复说明调至 6300K，字幕为内嵌简中单语。</p>
+                <div class="foot"><span>11-04 介质说明</span><span>评分 4.0 / 5</span></div>
+              </div>
+            </article>
+            <article class="pick card">
+              <a class="thumb" href="/#updates"><img src="https://picsum.photos/seed/eeuss-qibing-tianqiao/640/360" width="640" height="360" loading="lazy" alt="骑兵区《天桥四十二号》存档版本画面"></a>
+              <div class="body">
+                <span class="tagrow"><span class="tag">存档条目</span></span>
+                <h3>《天桥四十二号》Q-1094</h3>
+                <p>两版并列：720p 94 分钟、1080p 96 分 30 秒。后者多出结尾天桥长镜头，字幕无修订，仍为 2023 年译本。</p>
+                <div class="foot"><span>11-03 版本对照</span><span>评分 3.6 / 5</span></div>
+              </div>
+            </article>
+            <article class="pick card">
+              <a class="thumb" href="/#updates"><img src="https://picsum.photos/seed/eeuss-qiuxia-sanhao/640/360" width="640" height="360" loading="lazy" alt="秋霞专场《三号线的第五站》场次照"></a>
+              <div class="body">
+                <span class="tagrow"><span class="tag teal">秋霞专场</span></span>
+                <h3>《三号线的第五站》加映场</h3>
+                <p>因第 3 场售罄，11-09 追加 19:10 一场。片长 88 分钟，片尾字幕之后有 40 秒环境声，未删减。</p>
+                <div class="foot"><span>11-07 加映公告</span><span>评分 4.1 / 5</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3 最新更新 -->
+        <section class="block" id="updates">
+          <div class="block-head">
+            <h2><small>LATEST UPDATES</small>最新更新：本周条目改动逐条记</h2>
+            <a class="morelink" href="#channels">按频道查看</a>
+          </div>
+          <ul class="upd-list card" style="padding:18px 20px 10px">
+            <li class="upd-item"><time datetime="2026-11-08">11-08 09:20</time><span class="txt"><b>《雾港十六时》</b>增补字幕第 7 版，改动 34 行，修正地名 6 处，片长记录同步为 118 分 40 秒。</span><span class="kind">字幕修订</span></li>
+            <li class="upd-item"><time datetime="2026-11-08">11-08 08:05</time><span class="txt">秋霞专场第 4 场放映时间由 21:10 顺延至 <b>21:40</b>，票面与现场公告同步。</span><span class="kind">排期调整</span></li>
+            <li class="upd-item"><time datetime="2026-11-07">11-07 17:40</time><span class="txt"><b>《三号线的第五站》</b>确认 11-09 加映 19:10 一场，介质为 DCP，未删减。</span><span class="kind">加映</span></li>
+            <li class="upd-item"><time datetime="2026-11-07">11-07 11:12</time><span class="txt">骑兵区 Q-1120 条目新增画幅说明：1.85:1，与原始 2.39:1 版分开记录。</span><span class="kind">版本说明</span></li>
+            <li class="upd-item"><time datetime="2026-11-06">11-06 15:30</time><span class="txt"><b>《水库以北》</b>2K 扫描版上线条目，去除片头划痕，保留颗粒，见 Q-1086。</span><span class="kind">新增条目</span></li>
+            <li class="upd-item"><time datetime="2026-11-05">11-05 10:00</time><span class="txt">骑兵区归档编号规则调整：新条目从 Q-1100 起连续分配，旧号保留不回收。</span><span class="kind">规则说明</span></li>
+            <li class="upd-item"><time datetime="2026-11-04">11-04 20:18</time><span class="txt"><b>《研究所的午后三时》</b>色温说明补充 6300K 依据，附修复记录截图来源。</span><span class="kind">条目补充</span></li>
+            <li class="upd-item"><time datetime="2026-11-02">11-02 14:02</time><span class="txt">秋霞专场第 2 场字幕由外挂改为内嵌，理由为放映机读取外挂字体失败，已复测两次。</span><span class="kind">放映变更</span></li>
+          </ul>
+        </section>
+
+        <!-- 4 分类入口 -->
+        <section class="block" id="channels">
+          <div class="block-head">
+            <h2><small>CONTENT CHANNELS</small>分类入口：12 个频道按内容类型分</h2>
+            <a class="morelink" href="#faq">频道怎么用</a>
+          </div>
+          <div class="chan-head" role="group" aria-label="频道筛选">
+            <button type="button" class="active" data-filter="all">全部</button>
+            <button type="button" data-filter="qibing">骑兵区</button>
+            <button type="button" data-filter="qiuxia">秋霞专场</button>
+            <button type="button" data-filter="sub">字幕</button>
+            <button type="button" data-filter="print">版本</button>
+          </div>
+          <div class="chan-grid" id="chanGrid">
+            <a href="/#picks" data-cat="qibing">骑兵区修复版<span>Q-1100 起</span></a>
+            <a href="/#picks" data-cat="qibing">骑兵区胶片扫描<span>2K / 4K</span></a>
+            <a href="/#picks" data-cat="qiuxia">秋霞周末连排<span>四场</span></a>
+            <a href="/#picks" data-cat="qiuxia">秋霞映后问答<span>12 分钟</span></a>
+            <a href="/#picks" data-cat="sub">字幕修订记录<span>63 条</span></a>
+            <a href="/#picks" data-cat="sub">双语对照稿<span>中英</span></a>
+            <a href="/#picks" data-cat="print">画幅对照<span>1.85 / 2.39</span></a>
+            <a href="/#picks" data-cat="print">片长差异<span>41 条</span></a>
+            <a href="/#picks" data-cat="qibing">骑兵区短片合辑<span>5 段式</span></a>
+            <a href="/#picks" data-cat="qiuxia">秋霞加映公告<span>临时场</span></a>
+            <a href="/#picks" data-cat="sub">字幕来源说明<span>校订人</span></a>
+            <a href="/#picks" data-cat="print">放映介质<span>DCP / 数字</span></a>
+          </div>
+        </section>
+
+        <!-- 5 深度解析 -->
+        <section class="block" id="analysis">
+          <div class="block-head">
+            <h2><small>DEEP ANALYSIS</small>深度解析：修复版片长变长，值不值得追</h2>
+          </div>
+          <article class="analysis">
+            <p class="lead">骑兵区最近半年上线的 9 个修复条目里，有 6 个片长比原版长。多出来的内容到底是被删段落回归，还是修复过程重新拼接，需要逐条核对。下面用《雾港十六时》《水库以北》《天桥四十二号》三组记录拆开看。</p>
+
+            <h3><span class="num">01</span>片长变长不等于内容变多</h3>
+            <p>《雾港十六时》修复版标注 118 分 40 秒，原始版 116 分 28 秒，差 2 分 12 秒。修复记录写明多出段落为码头夜巡，属于当年删减段回归。同片 720p 存目版仍是 116 分 28 秒，两条记录并列时不会互相覆盖。</p>
+            <p>《天桥四十二号》的情况不同。1080p 版 96 分 30 秒，720p 版 94 分钟，差 2 分 30 秒，但不是删减段回归，而是结尾天桥长镜头用了另一条胶片接法。2023 年译本没有跟着改，字幕时间轴仍按 94 分钟版本对齐，播放到 93 分处会出现字幕提前的问题。</p>
+            <div class="claim">
+              <div class="claim-h">可核对判断</div>
+              <p>片长差在 2 分钟以内、且有逐段修复记录的，多出内容可信度高；片长差超过 2 分钟但没有段落说明的，应先当作拼接差异处理。这个判断可以被反驳：只要找到对应批次的修复日志，就能推翻。</p>
+            </div>
+
+            <h3><span class="num">02</span>字幕第几版，决定能不能直接看</h3>
+            <p>《雾港十六时》字幕到第 7 版，累计改动 132 行。第 7 版单独改了 34 行，地名 6 处，包括把“北堤”统一为“北堤口”。前 6 版里第 3 版改动最大，一次改了 47 行，但那一版把两处海浪音效提示译成了对白，第 4 版又改回去。</p>
+            <table class="cmp">
+              <caption>《雾港十六时》字幕版本对照（按校订时间）</caption>
+              <thead><tr><th>版本</th><th>校订时间</th><th>改动行数</th><th>主要问题</th></tr></thead>
+              <tbody>
+                <tr><td>第 3 版</td><td>2026-10-14</td><td>47</td><td>音效提示误作对白</td></tr>
+                <tr><td>第 4 版</td><td>2026-10-21</td><td>31</td><td>回退第 3 版两处误译</td></tr>
+                <tr><td>第 7 版</td><td>2026-11-08</td><td>34</td><td>地名统一、断句调整</td></tr>
+              </tbody>
+            </table>
+            <p>字幕版本号越高不一定越好。第 5 版曾把一句 14 字的台词压成 9 字，语速对上了，人物语气却变硬。校订人何棠在 11-01 的记录里写了这件事，第 6 版把原句恢复。看条目时优先找带校订人署名的版本。</p>
+
+            <h3><span class="num">03</span>秋霞专场的排期，跟骑兵区条目不同步</h3>
+            <p>骑兵区条目按上线时间排序，秋霞专场按场次编号排序，两套时间轴不共用。11-08 第 4 场放映《暴风前的十七分钟》，骑兵区对应条目 Q-1113 在 11-06 才上线，比排期确认晚两天。</p>
+            <ul class="timeline">
+              <li><time datetime="2026-11-03">11-03</time>秋霞专场公布本周四场排期，第 4 场初定 21:10。</li>
+              <li><time datetime="2026-11-06">11-06</time>骑兵区 Q-1113 上线，片长 41 分 06 秒，与排期表标注的 41 分钟有 6 秒差。</li>
+              <li><time datetime="2026-11-07">11-07</time>第 3 场售罄，11-09 加映一场，未影响第 4 场。</li>
+              <li><time datetime="2026-11-08">11-08</time>第 4 场因设备调试顺延至 21:40，票面同步。</li>
+            </ul>
+            <p>排期表写 41 分钟是取整，条目写 41 分 06 秒是实测。映后问答 12 分钟按整场结束时间倒推，实际预留 14 分钟，多出的 2 分钟是退场缓冲。这些数字在条目备注里都能对上。</p>
+
+            <h3><span class="num">04</span>胶片扫描的颗粒，去还是留</h3>
+            <p>《水库以北》2K 扫描版去掉了片头 8 秒划痕，保留原始颗粒。同批扫描的另一条《旧码头账本》把颗粒也做了降噪，结果暗部细节糊掉，评分为 3.2，低于《水库以北》的 4.5。</p>
+            <div class="split2">
+              <div class="panel fact">
+                <h4>事实记录</h4>
+                <ul>
+                  <li>《水库以北》扫描批次 B-2611，11-05 上线</li>
+                  <li>片头划痕去除 8 秒，其余保留</li>
+                  <li>画幅 1.66:1，片长 96 分钟</li>
+                </ul>
+              </div>
+              <div class="panel rumor">
+                <h4>待核实说法</h4>
+                <ul>
+                  <li>有转述称该版做了 4K 重扫，扫描记录只有 2K</li>
+                  <li>说法来源为 11-03 的一条群聊截图，未见原始文件</li>
+                  <li>条目备注已标注“以扫描记录为准”</li>
+                </ul>
+              </div>
+            </div>
+            <p>颗粒处理没有统一标准，但可以看两条硬指标：暗部是否保留层次，片头片尾划痕是否逐帧记录。两条都做到，画质判断才有依据。</p>
+          </article>
+        </section>
+
+        <!-- 6 体验指南 -->
+        <section class="block" id="guide">
+          <div class="block-head">
+            <h2><small>VIEWING GUIDE</small>观影指南：从查条目到进场五步</h2>
+            <a class="morelink" href="#faq">常见问题</a>
+          </div>
+          <ol class="steps">
+            <li class="step card"><h3>先确认场次编号</h3><p>秋霞专场看第几场，骑兵区看归档号。11-08 第 4 场与 Q-1113 对应，编号写错会跳到别的条目。</p></li>
+            <li class="step card"><h3>核对片长与画幅</h3><p>片长差 2 分钟以上先看版本说明。画幅 1.85:1 与 2.39:1 不要混看，裁切说明在条目底部。</p></li>
+            <li class="step card"><h3>找字幕版本号</h3><p>优先选带校订人署名的版本。第 7 版不一定最好，第 6 版恢复过长句，适合对语气敏感的人。</p></li>
+            <li class="step card"><h3>看放映介质</h3><p>DCP 与数字文件色温不同，修复版标注 6300K 的按 DCP 场次走。外挂字幕场次提前 10 分钟入场。</p></li>
+            <li class="step card"><h3>留映后问答时间</h3><p>秋霞专场第 4 场问答 12 分钟，实际预留 14 分钟。末场 21:40 开始，散场约 22:35。</p></li>
+            <li class="step card"><h3>回看修订记录</h3><p>看完回条目页对一遍改动行数。第 7 版改 34 行，其中 6 处地名，能直接对照字幕确认。</p></li>
+          </ol>
+        </section>
+
+        <!-- 7 FAQ -->
+        <section class="block" id="faq">
+          <div class="block-head">
+            <h2><small>FAQ</small>常见问题：条目、场次和版本</h2>
+          </div>
+          <details class="faq" open>
+            <summary>骑兵区 Q-1120 和 720p 存目版有什么区别？</summary>
+            <div class="ans"><p>Q-1120 是 1080p 修复版，片长 118 分 40 秒，字幕第 7 版；720p 存目版片长 116 分 28 秒，字幕停在 2023 年译本。两版并列显示，不会互相覆盖。</p></div>
+          </details>
+          <details class="faq">
+            <summary>秋霞专场第 4 场为什么改到 21:40？</summary>
+            <div class="ans"><p>11-08 上午设备调试占用原定时间，现场公告与票面同步改为 21:40。映后问答仍保留 12 分钟，散场时间约 22:35。</p></div>
+          </details>
+          <details class="faq">
+            <summary>《天桥四十二号》字幕为什么会提前？</summary>
+            <div class="ans"><p>1080p 版比 720p 版多 2 分 30 秒的结尾长镜头，字幕时间轴仍按 94 分钟版本对齐，播到 93 分处字幕会先出现。看 1080p 版时手动延时约 150 秒可对上。</p></div>
+          </details>
+          <details class="faq">
+            <summary>《水库以北》的颗粒被去掉了没有？</summary>
+            <div class="ans"><p>没有。批次 B-2611 只去除片头 8 秒划痕，原始颗粒保留。同批《旧码头账本》做了降噪，暗部细节变糊，评分 3.2。</p></div>
+          </details>
+          <details class="faq">
+            <summary>字幕第 7 版一定比第 6 版好吗？</summary>
+            <div class="ans"><p>不一定。第 5 版把一句 14 字台词压成 9 字，语速对了语气变硬，第 6 版恢复原句。第 7 版改地名与断句，语气层面没有大改。</p></div>
+          </details>
+          <details class="faq">
+            <summary>骑兵区归档号从哪开始？</summary>
+            <div class="ans"><p>11-05 起新条目从 Q-1100 连续分配，旧号保留不回收。Q-1094《天桥四十二号》是规则调整前的号，仍然有效。</p></div>
+          </details>
+        </section>
+
+        <!-- 8 用户评论 -->
+        <section class="block" id="comments">
+          <div class="block-head">
+            <h2><small>USER VOICES</small>用户评论：看完之后的几句实话</h2>
+            <a class="morelink" href="#picks">回到片单</a>
+          </div>
+          <div class="comments">
+            <article class="cmt">
+              <div class="who"><span class="avatar" style="background:#2e6f6a">周</span><b>周屿</b><time datetime="2026-11-08">11-08 10:02</time></div>
+              <p>《雾港十六时》第 7 版地名统一之后，看码头那段不用再猜“北堤”指哪儿了。34 行改动里最实用的是这个。</p>
+              <span class="quote">指向 Q-1120 字幕第 7 版</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="avatar" style="background:#8a6bb0">陈</span><b>陈默</b><time datetime="2026-11-08">11-08 09:41</time></div>
+              <p>第 4 场顺延 30 分钟，公告倒是写得清楚。可是 21:40 开场，末班地铁就有点悬了，散场 22:35，走得快也赶不上 22:50 那班。</p>
+              <span class="quote">指向秋霞第 4 场排期</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="avatar" style="background:#b25e46">林</span><b>林岸</b><time datetime="2026-11-07">11-07 22:16</time></div>
+              <p>《天桥四十二号》1080p 版的结尾长镜头值那 2 分 30 秒，但字幕提前是真的，得手动延时 150 秒。评分给 3.6 有点低了。</p>
+              <span class="quote">指向 Q-1094 版本对照</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="avatar" style="background:#22303f">何</span><b>何棠</b><span class="stars">★★★☆☆</span></div>
+              <p>第 5 版那句压成 9 字的时候，我自己看着都别扭。第 6 版恢复原句之后顺多了，字幕不是越短越好。</p>
+              <span class="quote">指向字幕第 5 / 6 版差异</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="avatar" style="background:#4a5060">杜</span><b>杜衡</b><time datetime="2026-11-06">11-06 18:03</time></div>
+              <p>《水库以北》2K 扫描保留颗粒这点做对了，暗部层次能看出来。同批《旧码头账本》降噪之后糊成一片，3.2 分不冤。</p>
+              <span class="quote">指向 B-2611 扫描批次</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="avatar" style="background:#c8912f">苏</span><b>苏晚</b><time datetime="2026-11-04">11-04 12:47</time></div>
+              <p>分类页的频道筛选挺好用，就是“字幕来源说明”和“字幕修订记录”两个名字太像，点进去才发现一个讲校订人，一个讲改动行数。</p>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="avatar" style="background:#2e6f6a">郭</span><b>郭迟</b><time datetime="2026-11-03">11-03 20:30</time></div>
+              <p>《研究所的午后三时》色温 6300K 这个说明，比只写“修复版”三个字有用。至少知道不是随手调的。</p>
+              <span class="quote">指向第 2 场介质说明</span>
+            </article>
+            <article class="cmt">
+              <div class="who"><span class="avatar" style="background:#8a6bb0">沈</span><b>沈禾</b><time datetime="2026-11-02">11-02 16:22</time></div>
+              <p>加映场 19:10 这个时间比周末连排友好。88 分钟片长，片尾还有 40 秒环境声，没删减这点提前写了，省得散场后讨论。</p>
+              <span class="quote">指向 11-09 加映公告</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- 9 相关资讯 -->
+        <section class="block" id="news">
+          <div class="block-head">
+            <h2><small>RELATED NEWS</small>相关资讯：排期、介质与归档规则</h2>
+            <a class="morelink" href="#updates">全部更新</a>
+          </div>
+          <div class="news-grid">
+            <article class="news-item card">
+              <div class="date"><b>08</b><span>11 月</span></div>
+              <div><h3>第 4 场顺延 30 分钟，票面同步调整</h3><p>设备调试占用原定 21:10 时段，现场公告与线上票面同时改为 21:40。映后问答保留 12 分钟。</p></div>
+            </article>
+            <article class="news-item card">
+              <div class="date"><b>07</b><span>11 月</span></div>
+              <div><h3>《三号线的第五站》追加 19:10 场</h3><p>第 3 场售罄后确认加映，片长 88 分钟，片尾 40 秒环境声保留，介质为 DCP。</p></div>
+            </article>
+            <article class="news-item card">
+              <div class="date"><b>05</b><span>11 月</span></div>
+              <div><h3>归档号规则调整，新条目从 Q-1100 起</h3><p>旧号保留不回收，Q-1094《天桥四十二号》等条目不受影响，检索时按原号查。</p></div>
+            </article>
+            <article class="news-item card">
+              <div class="date"><b>02</b><span>11 月</span></div>
+              <div><h3>第 2 场字幕改内嵌，外挂字体读取失败</h3><p>放映机读取外挂字体两次失败，改为内嵌简中单语，复测两次通过，条目页已更新介质说明。</p></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 10 相关推荐 -->
+        <section class="block" id="related">
+          <div class="block-head">
+            <h2><small>RELATED PICKS</small>相关推荐：按场景找条目</h2>
+          </div>
+          <div class="related-grid">
+            <article class="related-card card">
+              <h3>想先看短片再决定</h3>
+              <div class="chip-list">
+                <a href="/#picks">暴风前的十七分钟</a>
+                <a href="/#picks">骑兵区短片合辑</a>
+                <a href="/#picks">41 分钟片长</a>
+                <a href="/#picks">映后问答 12 分钟</a>
+              </div>
+            </article>
+            <article class="related-card card">
+              <h3>对字幕版本敏感</h3>
+              <div class="chip-list">
+                <a href="/#picks">雾港十六时字幕第 7 版</a>
+                <a href="/#picks">字幕来源说明</a>
+                <a href="/#picks">双语对照稿</a>
+                <a href="/#picks">校订人林岸</a>
+              </div>
+            </article>
+            <article class="related-card card">
+              <h3>想核对画幅与片长</h3>
+              <div class="chip-list">
+                <a href="/#picks">天桥四十二号版本对照</a>
+                <a href="/#picks">1.85:1 画幅</a>
+                <a href="/#picks">片长差异 41 条</a>
+                <a href="/#picks">Q-1094 归档号</a>
+              </div>
+            </article>
+            <article class="related-card card">
+              <h3>胶片扫描与颗粒</h3>
+              <div class="chip-list">
+                <a href="/#picks">水库以北 2K 扫描</a>
+                <a href="/#picks">B-2611 批次</a>
+                <a href="/#picks">旧码头账本降噪</a>
+                <a href="/#picks">保留原始颗粒</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 11 榜单 -->
+        <section class="block" id="ranking">
+          <div class="block-head">
+            <h2><small>WEEKLY RANKING</small>本周榜单：条目评分与改动活跃度</h2>
+            <a class="morelink" href="#analysis">看解析依据</a>
+          </div>
+          <ol class="rank-list card" style="padding:18px 20px">
+            <li><a href="/#picks">水库以北 2K 扫描版</a><span class="n">4.5 · Q-1086</span></li>
+            <li><a href="/#picks">雾港十六时 修复版</a><span class="n">4.2 · Q-1120</span></li>
+            <li><a href="/#picks">三号线的第五站 加映场</a><span class="n">4.1 · Q-1118</span></li>
+            <li><a href="/#picks">研究所的午后三时 第 2 场</a><span class="n">4.0 · DCP</span></li>
+            <li><a href="/#picks">暴风前的十七分钟 第 4 场</a><span class="n">3.9 · Q-1113</span></li>
+          </ol>
+        </section>
+
+      </div>
+
+      <!-- sidebar -->
+      <aside class="side-col" aria-label="侧栏导航与榜单">
+        <div class="side-card card side-nav" id="sideNav">
+          <h2>栏目导航</h2>
+          <a href="#overview">频道概览</a>
+          <a href="#picks">本周精选</a>
+          <a href="#updates">最新更新</a>
+          <a href="#channels">分类入口</a>
+          <a href="#analysis">深度解析</a>
+          <a href="#guide">观影指南</a>
+          <a href="#faq">常见问题</a>
+          <a href="#comments">用户评论</a>
+          <a href="#news">相关资讯</a>
+          <a href="#related">相关推荐</a>
+          <a href="#ranking">本周榜单</a>
+        </div>
+
+        <div class="side-card card">
+          <h2>热度榜 · 11-08</h2>
+          <ol class="rank-list">
+            <li><a href="/#picks">雾港十六时</a><span class="n">1120</span></li>
+            <li><a href="/#picks">暴风前的十七分钟</a><span class="n">1113</span></li>
+            <li><a href="/#picks">水库以北</a><span class="n">1086</span></li>
+            <li><a href="/#picks">天桥四十二号</a><span class="n">1094</span></li>
+            <li><a href="/#picks">三号线的第五站</a><span class="n">1118</span></li>
+          </ol>
+        </div>
+
+        <div class="side-card card">
+          <h2>常用标签</h2>
+          <div class="tagrow">
+            <a class="tag" href="/#picks">骑兵区修复版</a>
+            <a class="tag teal" href="/#picks">秋霞专场</a>
+            <a class="tag grey" href="/#picks">字幕修订</a>
+            <a class="tag" href="/#picks">胶片扫描</a>
+            <a class="tag grey" href="/#picks">画幅对照</a>
+            <a class="tag teal" href="/#picks">片长差异</a>
+            <a class="tag" href="/#picks">加映场</a>
+            <a class="tag grey" href="/#picks">DCP 介质</a>
+          </div>
+        </div>
+
+        <div class="credit">
+          <h2>创作者证言</h2>
+          <blockquote>“第 7 版没有大改语气，只把地名统一了。字幕最怕每个版本都重新押一次韵，观众反而跟丢。”</blockquote>
+          <cite>林岸</cite>
+          <div class="role">字幕校订 · 《雾港十六时》第 4 至 7 版</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-top">
+    <div class="foot-brand">
+      <div class="logo-row">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#e8b04b"/>
+          <circle cx="32" cy="32" r="15" fill="none" stroke="#1c2530" stroke-width="3.5"/>
+          <circle cx="32" cy="32" r="4" fill="#1c2530"/>
+          <path d="M32 6v8M32 50v8M6 32h8M50 32h8" stroke="#1c2530" stroke-width="2.6" stroke-linecap="round"/>
+        </svg>
+        <b>eeuss影院在线骑兵区秋霞</b>
+      </div>
+      <p>把骑兵区的归档片单、秋霞专场的场次表和字幕版本放在一起核对，给出可追溯的放映信息与改动记录。条目以示例数据为主，正式放映以现场公告为准。</p>
+    </div>
+    <div class="foot-groups">
+      <div>
+        <h3>骑兵区</h3>
+        <ul>
+          <li><a href="/#channels">修复版条目</a></li>
+          <li><a href="/#channels">胶片扫描</a></li>
+          <li><a href="/#channels">短片合辑</a></li>
+          <li><a href="/#ranking">归档号规则</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>秋霞专场</h3>
+        <ul>
+          <li><a href="/#channels">周末连排</a></li>
+          <li><a href="/#channels">映后问答</a></li>
+          <li><a href="/#channels">加映公告</a></li>
+          <li><a href="/#guide">入场指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>版本与字幕</h3>
+        <ul>
+          <li><a href="/#channels">字幕修订记录</a></li>
+          <li><a href="/#channels">画幅对照</a></li>
+          <li><a href="/#channels">放映介质</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span class="note"><b>页面更新：</b>2026-11-08 09:20，对应正文“最新更新”中《雾港十六时》字幕第 7 版与第 4 场排期顺延两条记录。</span>
+    <span>© 2026 eeuss影院在线骑兵区秋霞 · 示例内容，仅作条目结构演示</span>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到页面顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"eeuss影院在线骑兵区秋霞",
+  "description":"整理骑兵区片单、秋霞专场场次与字幕版本记录的观影索引。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"骑兵区 Q-1120 和 720p 存目版有什么区别？","acceptedAnswer":{"@type":"Answer","text":"Q-1120 是 1080p 修复版，片长 118 分 40 秒，字幕第 7 版；720p 存目版片长 116 分 28 秒，字幕停在 2023 年译本。"}},
+    {"@type":"Question","name":"秋霞专场第 4 场为什么改到 21:40？","acceptedAnswer":{"@type":"Answer","text":"11-08 上午设备调试占用原定时间，公告与票面同步改为 21:40，映后问答仍保留 12 分钟。"}},
+    {"@type":"Question","name":"《天桥四十二号》字幕为什么会提前？","acceptedAnswer":{"@type":"Answer","text":"1080p 版比 720p 版多 2 分 30 秒结尾长镜头，字幕时间轴仍按 94 分钟版本对齐，播到 93 分处会提前出现。"}},
+    {"@type":"Question","name":"《水库以北》的颗粒被去掉了没有？","acceptedAnswer":{"@type":"Answer","text":"没有。批次 B-2611 只去除片头 8 秒划痕，原始颗粒保留，画幅 1.66:1，片长 96 分钟。"}},
+    {"@type":"Question","name":"字幕第 7 版一定比第 6 版好吗？","acceptedAnswer":{"@type":"Answer","text":"不一定。第 5 版压缩台词后语气变硬，第 6 版恢复原句，第 7 版主要改地名与断句。"}},
+    {"@type":"Question","name":"骑兵区归档号从哪开始？","acceptedAnswer":{"@type":"Answer","text":"11-05 起新条目从 Q-1100 连续分配，旧号保留不回收，Q-1094《天桥四十二号》仍然有效。"}}
+  ]
+}
+</script>
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('primaryNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=860){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var form=document.getElementById('searchForm');
+  var input=document.getElementById('searchInput');
+  var feedback=document.createElement('p');
+  feedback.className='search-feedback';
+  feedback.id='searchFeedback';
+  feedback.setAttribute('role','alert');
+  if(form&&input){
+    form.appendChild(feedback);
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var q=input.value.trim().toLowerCase();
+      if(!q){ feedback.textContent='请输入片名、频道名或标签后再查找。'; feedback.classList.add('show'); return; }
+      var hits=[];
+      document.querySelectorAll('main h3, main .upd-item .txt, main .tag, main .chip-list a, main .rank-list a').forEach(function(el){
+        var t=(el.textContent||'').toLowerCase();
+        if(t.indexOf(q)>-1){ hits.push(el); }
+      });
+      if(hits.length){
+        feedback.classList.remove('show');
+        var target=hits[0];
+        var sec=target.closest('section');
+        if(sec&&sec.id){ location.hash='#'+sec.id; }
+        target.setAttribute('tabindex','-1');
+        target.focus({preventScroll:true});
+      }else{
+        feedback.textContent='没有找到与“'+input.value.trim()+'”匹配的条目，试试“雾港十六时”“秋霞专场”或“字幕修订”。';
+        feedback.classList.add('show');
+      }
+    });
+  }
+
+  var chanBtns=document.querySelectorAll('.chan-head button');
+  var chanItems=document.querySelectorAll('#chanGrid a');
+  chanBtns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      chanBtns.forEach(function(b){b.classList.remove('active');});
+      btn.classList.add('active');
+      var f=btn.getAttribute('data-filter');
+      chanItems.forEach(function(a){
+        a.style.display=(f==='all'||a.getAttribute('data-cat')===f)?'':'none';
+      });
+    });
+  });
+
+  var toTop=document.getElementById('toTop');
+  var navLinks=document.querySelectorAll('#sideNav a');
+  var sections=[];
+  navLinks.forEach(function(a){
+    var id=a.getAttribute('href').slice(2);
+    var el=document.getElementById(id);
+    if(el) sections.push({link:a,el:el});
+  });
+
+  var ticking=false;
+  function onScroll(){
+    if(ticking) return;
+    ticking=true;
+    requestAnimationFrame(function(){
+      var y=window.scrollY||window.pageYOffset;
+      if(toTop){ toTop.classList.toggle('show', y>420); }
+      var best=null;
+      sections.forEach(function(s){
+        var top=s.el.getBoundingClientRect().top;
+        if(top<=140) best=s;
+      });
+      navLinks.forEach(function(a){a.classList.remove('active');});
+      if(best) best.link.classList.add('active');
+      ticking=false;
+    });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  if(toTop){
+    toTop.addEventListener('click',function(){
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  }
+})();
+</script>
+</body>
+  </html>
